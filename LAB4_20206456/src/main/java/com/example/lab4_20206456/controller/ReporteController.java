@@ -11,5 +11,5 @@ public class ReporteController {
     public String verReportes(){
         return "reportes";
     }
-    
+
 }
