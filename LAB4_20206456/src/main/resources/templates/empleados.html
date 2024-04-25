@@ -36,5 +36,27 @@
 </nav>
 
 <br>
+<table id="miTabla2" class="display" style="padding-top: 10px">
+    <thead>
+    <tr style="background-color: #378fff">
+        <th style="text-align: center; color: #ffffff; font-weight: normal !important;">Nombre</th>
+        <th style="text-align: center; color: #ffffff; font-weight: normal !important;">Apellido</th>
+        <th style="text-align: center; color: #ffffff; font-weight: normal !important;">Puesto</th>
+        <th style="text-align: center; color: #ffffff; font-weight: normal !important;">Departamento</th>
+        <th style="text-align: center; color: #ffffff; font-weight: normal !important;">Ciudad</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="empleado, info : ${listaEmpleados}">
+
+        <td style="text-align: center" th:text="${empleado.nombreempleado}"></td>
+        <td style="text-align: center" th:text="${empleado.apellidoempelado}"></td>
+        <td style="text-align: center" th:text="${empleado.jobs.jobtitle}"></td>
+        <td style="text-align: center" th:text="${empleado.departments.departmentname}"></td>
+        <td style="text-align: center" th:text="${empleado.departments.departmentname}"></td>
+    </tr>
+    </tbody>
+</table>
+
 </body>
 </html>
